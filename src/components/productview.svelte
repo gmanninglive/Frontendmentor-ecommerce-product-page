@@ -8,14 +8,18 @@
 	export let selected = 1;
 
 	export let isOpen = false;
+
+    
 </script>
 
-<div class="w-full py-20 xl:px-20 flex justify-between gap-x-20">
+
+
+<div class="w-full p-2 md:py-20 xl:px-20 flex justify-between flex-wrap md:flex-nowrap gap-x-20">
 	<Lightbox bind:isOpen {images} {selected} />
 	<!-- Images -->
-	<div class="w-1/2 max-w-[500px]">
-		<button on:click={() => (isOpen = true)}>
-			<img src={images[selected]} alt="selected" class="w-full rounded-lg" />
+	<div class="md:w-1/2 max-w-[500px]">
+		<button on:click={() => (isOpen = true)} class="">
+			<img src={images[selected]} alt="selected" class="w-full rounded-lg " />
 		</button>
 		<div class="flex justify-between gap-x-6 mt-6 w-full">
 			<button
@@ -46,7 +50,7 @@
 	</div>
 
 	<!-- Description -->
-	<div class="w-1/2">
+	<div class="w-full py-4 md:py-0 md:w-1/2">
 		<!-- Heading -->
 		<p class="text-orange font-bold text-xs">SNEAKER COMPANY</p>
 		<h1 class="font-bold text-3xl">{name}</h1>

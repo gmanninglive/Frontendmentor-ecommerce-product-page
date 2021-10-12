@@ -5,7 +5,7 @@
 </script>
 
 <div class="w-screen">
-<div class="w-10/12 mx-auto">
+<div class="w-full md:w-10/12 mx-auto">
 	<Nav />
 <slot />
 </div>

@@ -1,0 +1,10 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@import "https://fonts.google.com/specimen/Kumbh+Sans";
+
+html, body {
+    font-family:"Kumbh Sans";
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
